@@ -1,0 +1,84 @@
+/* global reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(214, 212, 212);
+}
+section{
+    color:white;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background-color: rgb(95, 103, 104);
+}
+.calculator > .title{
+    text-align: center;
+    padding: 5px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+}
+.container{
+    width: 90%;
+    max-width: 400px;
+    background-color: rgb(61, 61, 61);
+    border: 0.5px solid rgb(83, 86, 87);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.display{
+    background-color: rgb(95, 103, 104);
+    height: 150px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+}
+.display-history{
+    opacity: 0.4;
+    font-size: 20px;
+}
+.temp-result{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font-size: 20px;
+    opacity: 0.4;
+}
+.all-button{
+    display: grid;
+    background-color: rgb(107, 127, 129);
+    
+    
+    grid-template: repeat(4,1fr)/ repeat(4,1fr);
+}
+.btn-zero{
+    grid-column: 1/3;
+}
+.button{
+    border: 0.5px solid rgb(83, 86, 87);
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(97, 190, 201)
+}
+.operation, .clear-all, .last-entity-clear, .dot{
+    background-color: rgb(135, 162, 165);
+}
